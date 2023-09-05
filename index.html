@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visulaizer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/editor/editor.main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Sorting Visualizer</h1>
+      <a href="https://www.linkedin.com/in/bholakr/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/Bhola-kumar"><i class="fa fa-github"></i></a>
+      
+      <a href="https://github.com/Bhola-kumar/Shorting-Visualizer">Source Code</a>
+      
+    </div>
+  </header>
+    
+    <div class="parentDiv">
+        <div class="box" id="box2">
+          <!-- Content for Box 2 will be placed dynamically-->
+        </div>
+        <div class="box" id="box3">
+          <select  class="language-option">
+            <option disabled selected>Code Language</option>
+            <option value="javascript">javascript</option>
+            <option value="cpp">cpp</option>
+            <option value="python">python</option>
+          </select>
+          <code class="language-javascript" id="codeSnippet">
+  //Choose the array size from slider and then Generate the random array 
+  //Next choose the sorting method and Hit Start to Visualize that method
+          </code>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <div class="control-box">
+          <!-- <label class="title-name">Array Generator</label> -->
+          <input type="range" min="1" max="100" value="15"  id="arraySize">
+          <span id="arraySizeValue">15</span>
+          <button class="btn">Generate</button>
+        </div>
+        <div class="control-box">
+          <select class="options">
+            <option disabled selected>Choose Sorting Method</option>
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="selectionSort">Selection Sort</option>
+            <option value="insertionSort">Insertion Sort</option>
+            <option value="quickSort">Quick Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+            <option value="heapSort">Heap Sort</option>
+          </select><br>
+          <button class="btn">Start</button>
+        </div>
+        
+        <!-- <input type="range" min="50" max="1000" value="5" class="slider" id="sortingSpeed"> -->
+    </div>
+    <script src="algorithms/bubbleSort.js" type="module"></script>
+    <script src="algorithms/selectionSort.js" type="module"></script>
+    <script src="algorithms/insertionSort.js" type="module"></script>
+    <script src="algorithms/quickSort.js" type="module"></script>
+    <script src="algorithms/mergeSort.js" type="module"></script>
+    <script src="algorithms/heapSort.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+</body>
+</html>

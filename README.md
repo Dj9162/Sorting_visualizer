@@ -1,1 +1,1 @@
-# Sorting_visualizer
+# Shorting-Visualizer

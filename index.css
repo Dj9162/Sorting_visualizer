@@ -1,0 +1,169 @@
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+.parentDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(93, 95, 94);
+    border: red;
+    justify-content: center;
+    
+    
+}
+.parentDiv #box2 {
+  transform: rotateX(180deg);
+}
+.box {
+  flex: 1;
+  padding: 50px;
+  border: 1px solid #ccc;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  width: 300px; /* Set the fixed width for the parentDiv */
+  height: 300px; /* Set the fixed height for the parentDiv */
+  position: relative;
+}
+
+
+.innerDiv {
+  display: flex;
+    height: 100%;
+    width: 100%; 
+    margin-right: 5px; 
+    /* margin-bottom: 50px;
+    margin-top: 50px; */
+    transform: rotateX(180deg);
+}
+.controls{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.options {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #492b95;
+    cursor: pointer;
+    margin-right: 5px; 
+  }
+  
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4e7dab;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px; 
+  }
+  
+  .btn:hover {
+    background-color: #103b6d;
+  }
+  
+  .btn:active {
+    background-color: #3e8e41;
+  }
+
+  .title-name {
+    background-color: #4e7dab;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    /* margin-top:0%; */
+  }
+
+
+#codeSnippet{
+  overflow: auto;
+  width:100%;
+  height:100%;
+  white-space: pre;
+  font-size: auto;
+  /* margin-top:0; */
+}
+
+
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fa-linkedin {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.fa-github {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #f02968;
+}
+  
+.control-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2a4a4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Styles for the slider input */
+input[type="range"] {
+  width: 80%;
+  height: 5px;
+  background-color: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+#arraySizeValue {
+  margin: 10px 0;
+  font-size: 18px;
+}

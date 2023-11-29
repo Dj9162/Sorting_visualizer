@@ -53,9 +53,20 @@ async function swapHeight(first, last) {
 
     let h1 = e1.clientHeight;
     let h2 = e2.clientHeight;
+
+    // Change the height instantly without animation
+    e1.style.transition = 'height 0s';
+    e2.style.transition = 'height 0s';
+
     e1.style.height = h2 + "px";
     e2.style.height = h1 + "px";
+
+    // Restore the transition for future animations
+    await sleep(0); // Let the browser render the height changes
+    e1.style.transition = 'height 0.5s';
+    e2.style.transition = 'height 0.5s';
 }
+
 
 function swapColor(first, last) {
     let e1 = document.getElementById('elem' + first);
